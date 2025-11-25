@@ -9,7 +9,6 @@ import {
   SidebarFooter,
   useSidebar,
 } from "@/components/ui/sidebar";
-
 import { NavLink } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
 
@@ -29,7 +28,7 @@ export function AppSidebar({ items }) {
               e.stopPropagation();
               isMobile ? setOpenMobile(false) : setOpen(false);
             }}
-            className="p-2 rounded-md hover:bg-gray-200 lg:hidden mt-1"
+            className="p-2 rounded-md lg:hidden mt-1"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +55,6 @@ export function AppSidebar({ items }) {
         <SidebarMenu className="px-2 mt-3">
           {items.map((item) => {
             const Icon = item.icon;
-
             return (
               <SidebarMenuItem key={item.title}>
                 <NavLink to={item.path} end>

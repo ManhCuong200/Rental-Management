@@ -22,7 +22,7 @@ const Layout = () => {
         <div className="flex flex-1 flex-col overflow-hidden">
           <Header  />
           <Separator className="w-full self-stretch" />
-          <main className="flex-1 p-6 overflow-y-auto bg-white">
+          <main className="flex-1 overflow-y-auto p-4 lg:p-8">
             <Outlet />
           </main>
         </div>

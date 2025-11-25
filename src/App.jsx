@@ -5,9 +5,11 @@ import Rooms from "./pages/Rooms";
 import Tenants from "./pages/Tenants";
 import Bills from "./pages/Bills";
 import Setting from "./pages/Setting";
+import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <BrowserRouter>
+      <Toaster />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
